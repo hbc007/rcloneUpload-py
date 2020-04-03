@@ -82,12 +82,12 @@ def main():
             shutil.copy(sourcePath,targetPath)
             if os.path.exists(targetPath):
                 os.remove(sourcePath)
-                Log(f,"-- File moved successfully")
+                Log(f,"-- File uploaded successfully\n")
         except IOError as e:
             Log(f,"-- Move failed[1]: %s"%e)
-            Log(f,"-- Please try to remounted the drive")
+            Log(f,"-- Please try to remounted the drive\n")
         except:
-            Log(f,"-- Move failed[2]: ",sys.exc_info())
+            Log(f,"-- Move failed[2]: ",sys.exc_info(),"\n")
     DelelteEmptyDir(downloadDir)
     Log(f,"------Task Finished------")
     f.close()
