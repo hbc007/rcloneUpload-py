@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['rcloneUpload.py'],
-             pathex=['/home/hbc/WorkSpace/Python/aria2job'],
+             pathex=['/home/hbc/WorkSpace/Python/aria2job/rcloneUpload-py'],
              binaries=[],
              datas=[],
              hiddenimports=[],
